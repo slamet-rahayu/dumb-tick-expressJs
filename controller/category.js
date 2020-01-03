@@ -20,3 +20,13 @@ exports.show = (req, res) => {
         }]
     }).then(cat=> res.send(cat))
 }
+
+exports.store = (req, res) => {
+    category.create(req.body)
+    .then(cat => {
+        res.send({
+            message:"success",
+            cat
+        })
+    })
+}

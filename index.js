@@ -29,6 +29,7 @@ app.group('/api/v1', (router) => {
     //route for category
     router.get('/categories', CategoryController.index)
     router.get('/categories/:id', CategoryController.show)
+    router.post('/categories', CategoryController.store)
     //route for event
     router.get('/eventdetail/:id', EventController.detail)
     router.get('/myticket/:id/', EventController.myticket)
