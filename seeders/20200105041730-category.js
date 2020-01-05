@@ -12,7 +12,7 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    return queryInterface.bulkInsert('category', [{
+    return queryInterface.bulkInsert('Category', [{
         name: 'Sport',
         createdAt: new Date(),
         updatedAt: new Date()
