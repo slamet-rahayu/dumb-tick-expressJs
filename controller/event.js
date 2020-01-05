@@ -52,4 +52,10 @@ exports.store = (req, res) => {
             event
         })
     })
+    .catch(err=>{
+        res.send({
+            message: 'error',
+            err
+        })
+    })
 }
