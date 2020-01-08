@@ -15,7 +15,7 @@ exports.login = (req, res) => {
                 user
             })
         }else{
-            res.json({error: 'email or password isnt correct'})
+            res.json({error: 'invalid username and/or password.'})
         }
     }).catch(err=> {
         res.status(400).json({error: err})
